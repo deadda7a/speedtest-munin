@@ -33,12 +33,12 @@ if [ "$1" = "config" ]; then
 "graph_vlabel Traffic"
 "graph_category network"
 "graph_info Up- and Downloadspeed over time"
-"totaltx.label Downloadspeed"
-"totaltx.info The download speed."
-"totaltx.cdef down,1000000,*"
-"totalrx.label Uploadspeed"
-"totalrx.info The upload speed."
-"totalrx.cdef up,1000000,*"
+"down.label Downloadspeed"
+"down.info The download speed."
+"down.cdef down,1000000,*"
+"up.label Uploadspeed"
+"up.info The upload speed."
+"up.cdef up,1000000,*"
 EOF
 	exit 0
 fi;
