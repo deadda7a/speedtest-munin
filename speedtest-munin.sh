@@ -32,13 +32,13 @@ if [ "$1" = "config" ]; then
 "graph_args --base 1000 --lower-limit 0"
 "graph_vlabel Traffic"
 "graph_category network"
-"graph_info Total network traffic in bytes."
-"totaltx.label Sent"
-"totaltx.info Total data sent."
-"totaltx.cdef totaltx,1000000,*"
-"totalrx.label Received"
-"totalrx.info Total data received."
-"totalrx.cdef totalrx,1000000,*"
+"graph_info Up- and Downloadspeed over time"
+"totaltx.label Downloadspeed"
+"totaltx.info The download speed."
+"totaltx.cdef down,1000000,*"
+"totalrx.label Uploadspeed"
+"totalrx.info The upload speed."
+"totalrx.cdef up,1000000,*"
 EOF
 	exit 0
 fi;
