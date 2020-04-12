@@ -12,4 +12,4 @@ sudo mv speedtest-munin.sh /etc/munin/plugins
 ```
 
 3. License:
-MIT License
+GPL-3.0
