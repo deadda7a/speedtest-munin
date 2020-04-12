@@ -11,5 +11,7 @@ pip3 install speedtest_cli
 sudo mv speedtest-munin.sh /etc/munin/plugins
 ```
 
-3. License:
+3. Notes: Be aware this plugin is going to generate quite a lot of traffic!
+
+4. License:
 GPL-3.0
