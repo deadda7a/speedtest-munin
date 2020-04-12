@@ -42,3 +42,14 @@ if [ "$1" = "config" ]; then
 EOF
 	exit 0
 fi;
+
+# Main script
+rawJson=$(speedtest-cli --json)
+
+download=$(echo "${rawJson}" | jq '.download')
+upload=$(echo "${rawJson}" | jq '.upload')
+
+echo "down" ${download}
+echo "up" ${upload}
+
+exit 0
