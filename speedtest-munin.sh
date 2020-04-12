@@ -20,7 +20,7 @@ GPLv3
 if [! command -v jq > /dev/null 2>&1 ]; then
   echo "Error: jq not installed!"
   exit 1
-elif ! command -v speedtest-cli > /dev/null 2>&1; then
+elif ! command -v /usr/local/bin/speedtest-cli > /dev/null 2>&1; then
   echo "Error: speedtest_cli not installed!"
   exit 1
 fi
@@ -44,7 +44,7 @@ EOF
 fi;
 
 # Main script
-rawJson=$(speedtest-cli --json)
+rawJson=$(/usr/local/bin/speedtest-cli --json)
 
 download=$(echo "${rawJson}" | jq '.download')
 upload=$(echo "${rawJson}" | jq '.upload')
