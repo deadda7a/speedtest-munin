@@ -29,7 +29,7 @@ fi
 if [ "$1" = "config" ]; then
 	cat << EOF
 "graph_title speedtest_cli"
-"graph_args --base 1000 --lower-limit 0"
+"graph_args --base 1024 --lower-limit 0"
 "graph_vlabel Traffic"
 "graph_category network"
 "graph_info Up- and Downloadspeed over time"
